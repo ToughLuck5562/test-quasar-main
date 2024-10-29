@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
-import .account_database
-import .activites_database
+import account_database
+import activites_database
 
 app = Flask(__name__, template_folder='../client/templates', static_folder='../client/static')
 app.secret_key = 'quasarkey'
