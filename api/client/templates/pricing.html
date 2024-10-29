@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/pricing.css') }}">
+    <script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
+    <title>Pricing</title>
+</head>
+<body>
+
+    <h1 class="title">Pricing</h1>
+
+    <div class="pricing">
+
+        <div class="pricing-container">
+            <h2>Student</h2>
+            <div class="tag"><p>50% Off</p></div>
+            <ul>
+                <li>✓ Math, and Science Courses</li>
+                <li>✓ Lower LLM's</li>
+                <li>✓ Supports 1 account</li>
+            </ul>
+            <div class="discount">
+                <h3>$14.99 Monthly</h3>
+                <h4>$6.99 Monthly</h4>
+            </div>
+        </div>
+        <div class="pricing-container">
+            <h2>Teacher</h2>
+            <div class="tag"><p>Best</p></div>
+            <ul>
+                <li>✓ All Student Features</li>
+                <li>✓ Better LLM's</li>
+                <li>✓ Supports 8 accounts</li>
+            </ul>
+            <h3>$30.99 Monthly</h3>
+        </div>
+        <div class="pricing-container">
+            <h2>School</h2>
+            <ul>
+                <li>✓ All Teacher Features</li>
+                <li>✓ Highest LLM's</li>
+                <li>✓ Supports # accounts</li>
+            </ul>
+            <h3>Custom</h3>
+        </div>
+    </div>
+
+    <button onclick="window.location.href='/'" class="button">Landing Page</button>
+
+</body>
+</html>

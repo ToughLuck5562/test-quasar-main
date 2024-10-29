@@ -1,0 +1,15 @@
+.messages {
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+}
+
+.container {
+    padding: 35px !important;
+}
+
+.buttons {
+    padding: 15px;
+    width: 90%;
+}

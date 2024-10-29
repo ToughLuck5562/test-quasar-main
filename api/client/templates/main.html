@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
+    <title>Main</title>
+</head>
+<body>
+
+    <div class="nav-bar">
+
+        <div class="top-nav-bar">
+
+            <h1>QuasarQuery™</h1>
+
+            <ul>
+                <ul onclick="window.location.href='https://quasarqueryai.vercel.app/'">Quasar - AI</ul>
+                <ul onclick="window.location.href='/pricing'">Pricing</ul>
+                <ul onclick="window.location.href='/login'">Login</ul>
+            </ul>
+
+        </div>
+
+        <div class="bottom-nav-bar">
+            <h1>Revolutionize Learning with AI</h1>
+            <p>QuasarQuery combines AI with education to help young students accelerate in education.</p>
+            <br><p>* WE ARE CURRENTLY TESTING BETA FEATURES FOR DASHBOARD * </p>
+        </div>
+
+    </div>
+
+    <div class="features">
+
+        <div class="feature-container">
+            <h2>AI</h2>
+            <p>Our AI's use the latest LLMs that have been modified for young education!</p>
+        </div>
+        <div class="feature-container">
+            <h2>Diverse Content</h2>
+            <p>Our education courses help young students learn math, and science rapidly.</p>
+        </div>
+        <div class="feature-container">
+            <h2>24/7 Support</h2>
+            <p>We support you 24/7, when you have problems.</p>
+        </div>
+        <div class="feature-container">
+            <h2>Giveaways</h2>
+            <p>If you're an educator you can get chances to win giveaways like free subscriptions and more!</p>
+        </div>
+    </div>
+
+    <div class="signup">
+
+        <h1>Ready to Transform your students learning?</h1>
+        <p>Apply for QuasarQuery today, and experience rapid learning!</p>
+
+        <form method="post">
+            <input type="email" name="email" id="email" placeholder="Enter your email...">
+            <button>Apply</button>
+            <p>By signing up, you agree to our <a href="/terms-conditions">Terms & Conditions</a></p>
+        </form>
+
+    </div>
+
+</body>
+</html>

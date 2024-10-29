@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/aiplayground.css') }}">
+    <script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
+    <title>AI - Playground</title>
+</head>
+<body>
+
+    <div class="side-bar">
+
+        <div class="side-bar-top">
+            <p>Welcome, {{username}}</hp>
+        </div>
+
+        <ul>
+            <button onclick="window.location.href='/dashboard'">Dashboard</button>
+            <button onclick="window.location.href='/ai-playground'">AI Playground</button>
+            <button>My Class</button>
+            <button>Settings</button>
+            <button>Help</button>
+        </ul>
+
+    </div>
+
+    <div class="container">
+
+        <h3>Quasar AI Playground - Educational - NOT YET AVAILABLE</h3>
+
+        <div class="messages">
+
+            
+
+        </div>
+
+        <div class="buttons">
+
+            <input type="text" placeholder="Enter your message...">
+            <button>Send</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

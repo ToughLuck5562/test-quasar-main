@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    flex-direction: column;
+    padding: 35px;
+    gap: 13px;
+}
+
+.pricing {
+    margin-top: 25px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-container {
+    width: 250px;
+    position: relative;
+    min-height: 150px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 10px;
+    border-radius: 7px;
+    margin: 7px 35px;
+    border: 1px solid rgb(228, 228, 228);
+    text-align: center;
+}
+
+.pricing-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 15px 0px;
+}
+
+.tag {
+    position: absolute;
+    right: -5px;
+    top:-5px;
+    background-color: rgb(255, 100, 100);
+    padding: 2px 8px;
+    color: white;
+    border-radius: 7px;
+}
+
+.button {
+    padding: 10px 35px;
+    background: none;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Inter';
+}
+
+.discount {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.discount h3 {
+    text-decoration: line-through;
+}

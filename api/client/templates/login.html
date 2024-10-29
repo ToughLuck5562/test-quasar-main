@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+    <script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <form method="post">
+
+            <h1>Login</h1>
+            <input type="email" name="email" placeholder="Enter email..." required autofocus>
+            <input type="password" name="password" placeholder="Enter password..." required autofocus>
+            <p>By logging in, you agree to our <a href="/terms-conditions">Terms & Conditions</a></p>
+            <p>No account? <a href="/signup">Signup today!</a></p>
+            <button>Login</button>
+
+        </form>
+
+    </div>
+
+    <button onclick="window.location.href='/'" class="button">Landing Page</button>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/flashcards.css') }}">
+    <script src="{{ url_for('static', filename='scripts/dashboardactivityloader.js') }}" defer></script>
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="side-bar">
+
+        <div class="side-bar-top">
+            <p>Welcome, {{username}}</hp>
+                <p>* ALPHA * </p>
+        </div>
+
+        <ul>
+            <button onclick="window.location.href='/dashboard'">Dashboard</button>
+            <button onclick="window.location.href='/ai-playground'">AI Playground</button>
+            <button>My Class</button>
+            <button>Settings</button>
+            <button>Help</button>
+        </ul>
+
+    </div>
+    <div class="container">
+        <div class="activities">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            localStorage.setItem('username', '{{username}}')
+            localStorage.setItem('accountlevel', '{{account_level}}')
+        });
+    </script>
+
+</body>
+</html>

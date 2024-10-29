@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+    <script src="{{ url_for('static', filename='scripts/main.js') }}" defer></script>
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <form method="post">
+
+            <h1>Signup</h1>
+            <input type="username" name="username" placeholder="Username..." required autofocus>
+            <input type="email" name="email" placeholder="Enter email..." required>
+            <input type="password" name="password" placeholder="Enter password..." required>
+            <p>By signing up, you agree to our <a href="/terms-conditions">Terms & Conditions</a></p>
+            <p>If you're in an organization enter their code! <a href="/join-organization">Here</a></p>
+            <p>Already have an account? <a href="/login">Login</a></p>
+            <button>Signup</button>
+
+        </form>
+
+    </div>
+
+    <button onclick="window.location.href='/'" class="button">Landing Page</button>
+
+</body>
+</html>
